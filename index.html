@@ -1,0 +1,157 @@
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Inversiones Asia Honduras</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+function setCookie(cname,cvalue,exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  let expires = "expires=" + d.toGMTString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+
+
+
+  return "";
+}
+
+function checkCookie() {
+  let user = getCookie("username");
+  if (user != "") {
+    alert("Bienvenido de Nuevo  " + user);
+  } else {
+     user = prompt("Muchas gracias por visitarnos, por favor, escribe tu nombre:","");
+     if (user != "" && user != null) {
+       setCookie("username", user, 30);
+     }
+  }
+}
+
+</script>
+
+
+</head>
+
+<body>
+
+<div class="jumbotron text-center" style="margin-bottom:0" color="navy">
+  <h1>Inversiones Asia Honduras</h1>
+  <p>Somos una empresa que se especializa en ofrecerles los mejores productos de limpeiza y bioseguridad contra el COVID-19</p> 
+
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a class="navbar-brand" href="index.html" target="_blank"> HOME</a></li>
+        <li><a class="navbar-brand" href="Productos.html" target="_blank"> Productos y Servicios</a></li>
+        <li><a href="Politicas_devolucion.html" target="_blank">Políticas de Devolución</a></li>
+        <li><a href="Patrocinadores.html" target="_blank">Patrocinadores</a></li>
+        <li><a href="Pagos.html" target="_blank">Transferencias</a></li>
+             
+
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <div class="row">
+    <div class="col-sm-6">
+      <h2>Misión</h2>
+
+
+      <p>
+              <img src="images/Asia.png" alt="ASIA" 	>
+              
+            </p>
+
+      <p>Es una empresa que vende productos de bioseguridad como cloro, desmanchador de sanitarios y baños, alcohol, desinfectantes, gel de manos, jabón liquido, etc. Síguelos por Whatsapp.</p>
+      
+      <h2>Nuestros Productos de Limpieza y Bioseguridad</h2>
+      
+
+
+      <p>
+              <img src="images/Productos.png" 	>
+              
+            </p>
+       </div>
+  </div>
+</div>
+
+  
+  
+  <footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <section id="hours" class="col-sm-4">
+          <span>Horario de atención:</span><br>
+          Lunes a Viernes: 9:00 pm - 5:00pm<br>
+          Sábados de 9 a 12:00 pm
+          Puedes comprar con depósito  o pagar con tarjeta de crédito.<br>
+
+<P> Contáctanos en Whatsapp por preguntas sobre y asesorìas de nuestros productos y entregas</P>
+          <a href="https://wa.me/50494190233/?text=tu%20texto%20personalizado" target="_blank">
+    <img src="images/logo-wasap.png" width="50" height="50">
+ </a>
+
+ <!-- Your share button code -->
+<div class="fb-share-button" 
+data-href="https://rchang-1.github.io/datascience-ml.github.io/" 
+data-layout="button">
+
+</div>
+
+<div><a href="https://twitter.com/intent/tweet?button_hashtag=DataScience&amp;MachineLearning&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #DataScience&amp;MachineLearning</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+
+
+
+
+
+          <hr class="visible-xs">
+        
+      </div>
+      <div class="text-left">&copy; Copyright Inversiones Asia Honduras/div>
+          </div>
+  </footer>
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/ajax-utils.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
